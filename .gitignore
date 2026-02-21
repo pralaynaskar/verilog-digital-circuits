@@ -1,4 +1,3 @@
-!/
-!.vvp
-!*.vcd
-!.gitignore
+# Ignore all .vvp files in any subdirectory
+*/*.vvp
+*/*.vcd
