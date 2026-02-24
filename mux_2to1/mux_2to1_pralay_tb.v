@@ -1,4 +1,4 @@
-// mux_2to1_pralay_tb.v
+// mux_2to1_tb.v
 `timescale 1ns/1ps
 module mux_2to1_tb;
 
@@ -15,9 +15,10 @@ module mux_2to1_tb;
         .y(y)
     );
 
-    // Test sequence
+    // Test sequence for all possible input combinations
     initial begin
-        $dumpfile("mux_2to1.vcd");   // VCD file for GTKWave
+
+        $dumpfile("mux_2to1.vcd");
         $dumpvars(0, mux_2to1_tb);
 
         $display("A B Sel | Y");
@@ -29,6 +30,18 @@ module mux_2to1_tb;
         a = 0; b = 1; sel = 0; #10;
         $display("%b %b  %b  | %b", a, b, sel, y);
 
+        a = 1; b = 0; sel = 0; #10;
+        $display("%b %b  %b  | %b", a, b, sel, y);
+
+        a = 1; b = 1; sel = 0; #10;
+        $display("%b %b  %b  | %b", a, b, sel, y);
+
+        a = 0; b = 0; sel = 1; #10;
+        $display("%b %b  %b  | %b", a, b, sel, y);
+
+        a = 0; b = 1; sel = 1; #10;
+        $display("%b %b  %b  | %b", a, b, sel, y);
+
         a = 1; b = 0; sel = 1; #10;
         $display("%b %b  %b  | %b", a, b, sel, y);
 
@@ -36,6 +49,7 @@ module mux_2to1_tb;
         $display("%b %b  %b  | %b", a, b, sel, y);
 
         $finish;
+
     end
 
 endmodule
