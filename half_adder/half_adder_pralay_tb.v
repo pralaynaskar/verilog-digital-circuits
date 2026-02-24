@@ -1,4 +1,4 @@
-// half_adder_tb.v
+// half_adder_pralay_tb.v
 `timescale 1ns/1ps
 module half_adder_tb;
 
