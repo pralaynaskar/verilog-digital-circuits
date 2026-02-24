@@ -1,3 +1,4 @@
+// and_pralay_tb.v
 `timescale 1ns/1ps
 module and_gate_tb;
 

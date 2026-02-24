@@ -1,3 +1,4 @@
+// half_adder_pralay.v
 module half_adder(
     input a,
     input b,
