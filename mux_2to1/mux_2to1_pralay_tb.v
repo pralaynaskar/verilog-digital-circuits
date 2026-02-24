@@ -1,4 +1,4 @@
-// mux_2to1_tb.v
+// mux_2to1_pralay_tb.v
 `timescale 1ns/1ps
 module mux_2to1_tb;
 
