@@ -1,3 +1,4 @@
+// full_adder_pralay.v
 module full_adder(
     input a,
     input b,
