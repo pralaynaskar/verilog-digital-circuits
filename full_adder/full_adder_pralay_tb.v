@@ -1,4 +1,4 @@
-// full_adder_tb.v
+// full_adder_pralay_tb.v
 `timescale 1ns/1ps
 module full_adder_tb;
 
