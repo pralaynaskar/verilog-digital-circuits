@@ -1,3 +1,27 @@
-# Ignore all .vvp files in any subdirectory
-*/*.vvp
-*/*.vcd
+# Verilog / Icarus Verilog generated files
+*.vvp
+*.vcd
+*.out
+
+# Verilog simulation / waveform files
+*.fst
+*.lxt
+*.lxt2
+*.wlf
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
